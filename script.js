@@ -39,7 +39,12 @@ if (numbersConfirm) {
   userChoices = userChoices.concat(numbers)
 }
 
+//Allows the program know that if none of the parameters are selected, then the window must reload.
+if (!lowerConfirm && !upperConfirm && !charactersConfirm && !numbersConfirm){
+  alert("You much pick a least one type of character in order to generate a password.")
+}
 
+//
 
 }
 
