@@ -44,7 +44,12 @@ if (!lowerConfirm && !upperConfirm && !charactersConfirm && !numbersConfirm){
   alert("You much pick a least one type of character in order to generate a password.")
 }
 
-//
+// this is the for statement witht he algorithm that tells the program how to select from the variables declared.
+for(var i = 0; i < pwLenght; i++) {
+  result += userChoices [Math.floor(Math.random()*userChoices.length)]
+}
+
+return result
 
 }
 
