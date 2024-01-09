@@ -21,11 +21,19 @@ function generatePassword(){
     userChoices = userChoices.concat(lowerCase)
   }
 
-//This variable defines the second confirm box. upperCase option. Continous if statements.
+//This variable defines the second confirm box. upperCase option. Continues if statements.
   var upperConfirm = confirm("Would you like uppercase characters in your password?")
   if (upperConfirm) {
     userChoices = userChoices.concat(upperCase)
   }
+
+//Defines the special characters confirm box.
+  var charactersConfirm = confirm("Would you like special characters in your password?")
+  if (charactersConfirm) {
+    userChoices = userChoices.concat(specialCharacters)
+  }
+
+
 }
 
 // Write password to the #password input
