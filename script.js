@@ -33,6 +33,13 @@ function generatePassword(){
     userChoices = userChoices.concat(specialCharacters)
   }
 
+//Defines the numbers confirm box and output.
+var numbersConfirm = confirm("Would you like numbers in your password?")
+if (numbersConfirm) {
+  userChoices = userChoices.concat(numbers)
+}
+
+
 
 }
 
