@@ -45,6 +45,7 @@ if (!lowerConfirm && !upperConfirm && !charactersConfirm && !numbersConfirm){
 }
 
 // this is the for statement witht he algorithm that tells the program how to select from the variables declared.
+// it provides the result on the indicated window.
 for(var i = 0; i < pwLenght; i++) {
   result += userChoices [Math.floor(Math.random()*userChoices.length)]
 }
